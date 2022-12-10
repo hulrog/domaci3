@@ -1,7 +1,7 @@
 import classes from './Board.module.css';
 
 function Board(props){
-    return <div class={classes.frame}>
+    return <div className={classes.frame}>
         {props.children}
     </div>
 }
