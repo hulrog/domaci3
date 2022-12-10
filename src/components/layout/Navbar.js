@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import classes from './Navbar.module.css';
 
 function Navbar(){
-    return <header>
+    return <header className={classes.header}>
+        <div className = {classes.title}>WESTEROS</div>
         <nav>
             <ul>
                 <li><Link to='/'>Home</Link></li>
