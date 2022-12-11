@@ -18,10 +18,8 @@ function HomePage() {
       sides calculated in an auto-resolve style algorithm.
     </p>
     <Board>
-      <Team side = "Left">
-      </Team>
-      <Team side = "Right">
-      </Team>
+      <Team side = "Left" />
+      <Team side = "Right" />
     </Board>
   </div>
 }

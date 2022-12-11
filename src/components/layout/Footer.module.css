@@ -1,0 +1,14 @@
+.footer {
+    color: black;
+    background-color: #545f5f;
+    text-align: center;
+    padding: 1px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.footer a {
+    color: black;
+}

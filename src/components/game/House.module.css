@@ -1,17 +1,24 @@
-.image {
-    width: 20%;
-    overflow: hidden;
-    margin: 2%;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+.left{
+   display: flex;
+   flex-direction: column;
 }
-  
-.image img {
+.image {
     width: 100%;
 }
+.image img {
+    width: 100px;
+    margin-top: 1%;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+}
   
-.content {
-    text-align: center;
-    width: 50%;
-    padding: 1rem;
+.information {
+    width: 14em;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 8em;
 }
