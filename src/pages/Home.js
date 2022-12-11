@@ -1,7 +1,12 @@
+import { useContext } from 'react';
+
 import Board from "../components/game/Board";
 import Team from "../components/game/Team";
 
+import TeamsContext from "../context/teams-context";
 function HomePage() { 
+  const teamsCtx = useContext(TeamsContext);
+
   return <div> 
     <h1> Home Page </h1>
     <p>
@@ -18,8 +23,8 @@ function HomePage() {
       sides calculated in an auto-resolve style algorithm.
     </p>
     <Board>
-      <Team side = "Left" />
-      <Team side = "Right" />
+      <Team side = "Left" houses = {teamsCtx.teamOne} />
+      <Team side = "Right" houses = {teamsCtx.teamTwo} />
     </Board>
   </div>
 }

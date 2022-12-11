@@ -6,7 +6,8 @@ function HousesList(props) {
         <ul className = {classes.list}>
             {props.houses.map(house => 
             <House 
-                key={house.id} 
+                key={house.id}
+                id ={house.id} 
                 name={house.name}
                 region = {house.region} 
                 seat={house.seat}

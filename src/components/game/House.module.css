@@ -17,11 +17,27 @@
 }
   
 .information {
-    width: 14em;
+    width: 10em;
     margin-bottom: 10px;
 }
 
 .table {
     width: 8em;
+}
 
+.buttonColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.buttonColumn button {
+    background-color: burlywood;
+    border: 2px solid black;
+    height: 30%;
+    cursor: pointer;
+    width: 4em;
+    font-weight: 700;
+}
+.buttonColumn button:hover{
+    background-color: rgb(196, 165, 126);
 }

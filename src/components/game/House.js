@@ -1,7 +1,51 @@
+import { useContext } from 'react';
+
 import Card from '../layout/Card.js';
 import classes from './House.module.css';
 
+import TeamsContext from '../../context/teams-context.js';
+
 function House(props) {
+    const teamsCtx = useContext(TeamsContext);
+
+    const houseIsTeamOne = teamsCtx.houseIsTeamOne(props.id);
+    const houseIsTeamTwo = teamsCtx.houseIsTeamTwo(props.id);
+
+    function toggleTeamOneStatusHandler(){
+        if(houseIsTeamOne){
+            teamsCtx.removeTeamOne(props.id);
+        }else{
+            teamsCtx.addTeamOne({
+                id: props.id,
+                name: props.name,
+                region: props.region,
+                seat: props.seat,
+                horse: props.horse,
+                foot: props.foot,
+                ranged: props.ranged,
+                siege: props.siege,
+                castle: props.castle
+            });
+        }
+    }
+    function toggleTeamTwoStatusHandler(){
+        if(houseIsTeamTwo){
+            teamsCtx.removeTeamTwo(props.id);
+        }else{
+            teamsCtx.addTeamTwo({
+                id: props.id,
+                name: props.name,
+                region: props.region,
+                seat: props.seat,
+                horse: props.horse,
+                foot: props.foot,
+                ranged: props.ranged,
+                siege: props.siege,
+                castle: props.castle
+            });
+        }
+    }
+
      return(
     <li>
         <Card>
@@ -12,11 +56,12 @@ function House(props) {
                 <div className = {classes.information}>
                     <h3>{props.name}</h3>
                     <address>
-                        {props.seat}, {props.region}
+                        {props.seat}
                     </address>
                 </div>
             </div>
             <table className = {classes.table}> 
+            <tbody>
                 <tr>
                     <td> Horse </td>
                     <td> {props.horse}</td>
@@ -37,7 +82,16 @@ function House(props) {
                     <td> Castles </td>
                     <td> {props.castle}</td>
                 </tr>
+            </tbody>
             </table>
+            <div className = {classes.buttonColumn}>
+                <button onClick = {toggleTeamOneStatusHandler} disabled = {houseIsTeamTwo}> 
+                    {houseIsTeamOne ? "None" : "Team One"}
+                </button>
+                <button onClick = {toggleTeamTwoStatusHandler} disabled = {houseIsTeamOne}> 
+                    {houseIsTeamTwo ? "None" : "Team Two"} 
+                </button>
+            </div>
         </Card>
     </li>
     )
