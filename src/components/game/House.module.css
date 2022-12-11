@@ -8,6 +8,8 @@
 .image img {
     width: 100px;
     margin-top: 1%;
+    position: relative;
+    top: 10px;
 }
 .information{
     display: flex;
@@ -21,4 +23,5 @@
 
 .table {
     width: 8em;
+
 }
