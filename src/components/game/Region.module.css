@@ -1,0 +1,25 @@
+.region{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 28em;
+    height: 45em;
+    background-color: rgb(221, 221, 221);
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    margin: 10px;
+    box-shadow: 0px 0px 10px black;
+    transition-duration: 200ms;
+}
+
+.region:hover{
+    background-color: white;
+}
+
+
+.image img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
