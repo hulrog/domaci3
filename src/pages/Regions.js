@@ -14,7 +14,8 @@ const regions = [
       knelt before the Dragon, forfeiting his Crown but saving his army from certain death and taking up
       a new title - the Warden of the North. The entire region is heavily fortified by Moat Cailin to the South,
       that guards the strip of land called The Neck, and to the North, the Wall protects the Realm from what lies beyond.`,
-    goods: ["Timber","Iron","Fur"]
+    goods: ["Timber","Iron","Fur"],
+    houses: ["Stark","Bolton","Glover","Manderly","Dustin","Karstark","Hornwood","Mormont"]
   },
   {
     id: "2",
@@ -29,7 +30,8 @@ const regions = [
       and the Iron Throne, while Baelor's Great Sept, seat of the Faith of the Seven lies atop Visenya's Hill and
       the ruins of a once mighty dragonpit crest the Hill of Rhaenys. Many craftsmen and merchants make their living
       in the great city of King's Landing, including Bakers, Armorers, Fishmongers and Moneychangers and shipbuilders.`,
-    goods: ["Spice","Fish","Ale"]
+    goods: ["Spice","Fish","Ale"],
+    houses: ["Targaryen","Stokeworth","Rosby","Velaryon","Bar Emmon","Rykker","Massey","Hayford"]
   },
   {
     id: "3",
@@ -44,7 +46,8 @@ const regions = [
       rules over Oldtown - the second most populuous city in Westeros, and protects the Citadel of the Maesters, 
       the learning hub of the continent. Golden vines from the Arbor, bees from Honeyholt, and fields of grain 
       of many others make the Reach the Breadbasket of the Realm.`,
-    goods: ["Grain","Cattle","Wine"]
+    goods: ["Grain","Cattle","Wine"],
+    houses: ["Tyrell","Hightower","Tarly","Rowan","Florent","Fossoway","Peake","Webber"]
   },
   {
     id: "4",
@@ -59,7 +62,8 @@ const regions = [
       never may be used to return to the yoke of the imperialist Old Valyria. Dunes and rocky mountains
       leave little arrable land, which is mostly found in the valley of the Greenblood river, where the city of 
       Plankytown is situated, as well as the vineyards for the famous Dornish Red.`,
-    goods: ["Fruit","Wine","Spice"]
+    goods: ["Fruit","Wine","Spice"],
+    houses: ["Martell","Dayne","Yronwood","Fowler","Uller","Blackmont","Manwoody","Vaith"]
   },
   {
     id: "5",
@@ -74,7 +78,8 @@ const regions = [
       much of their former power but keeping their pride. Known throughout the world as legendary Smiths, 
       Western Steel is always sought after by knights and lords and foreigners alike, second only to Valyrian Steel,
       whose craftsmanship has long been forgotten.`,
-    goods: ["Gold","Silver","Cattle"]
+    goods: ["Gold","Silver","Steel"],
+    houses: ["Lannister","Lefford","Brax","Marbrand","Farman","Westerling","Swyft","Prester"]
   },
   {
     id: "6",
@@ -89,7 +94,8 @@ const regions = [
       connect the Vale to the Free Cities and the Riverlands and Crownlands, as most of the trade avoids the 
       treacherous paths through the Mountains of the Moon, as they are often plagued by wild mountain clans,
       who once ruled these lands before the Andals.`,
-    goods: ["Silver","Timber","Fish"]
+    goods: ["Silver","Timber","Fish"],
+    houses: ["Arryn", "Redfort", "Royce", "Corbray", "Waynwood", "Waxley", "Grafton", "Sunderland"]
   },
   {
     id: "7",
@@ -104,7 +110,8 @@ const regions = [
       sailed by the most battle-hardened sailors who often venture to the far lands of Essos, and some have even dared
       to venture west - never to return. "We do not Sow", ring the words of House Greyjoy, for the Islands are unable 
       to grow any crops and have to pay the Iron Price to survive.`,
-    goods: ["Iron","Fish","Steel"]
+    goods: ["Iron","Fish","Steel"],
+    houses: ["Greyjoy", "Botley", "Goodbrother", "Harlaw", "Drumm", "Volmark", "Farwynd", "Blacktyde"]
   },
   {
     id: "8",
@@ -119,7 +126,8 @@ const regions = [
       are stoked, the Riverlands burn the brightest. This in turn has shaped a culture of warfare behind the enemy lines
       making the Rivermen the realm's finest archers and scouts, and the Lords of the Trident a particularly
       challanging foe in any weather and circumstance.`,
-    goods: ["Fish","Cattle","Grain"]
+    goods: ["Fish","Cattle","Grain"],
+    houses: ["Tully", "Frey", "Darry", "Blackwood", "Bracken", "Mooton", "Smallwood", "Mallister"]
   },
   {
     id: "9",
@@ -134,7 +142,8 @@ const regions = [
       finest infantry force, often wielding heavy warhammers and battle axes to war instead of swords and shields.
       The Dornish Marches, to the Southeast have long been the fighting ground from which the Stormlords repelled the Dornish
       Incursions.`,
-    goods: ["Cattle","Iron","Timber"]
+    goods: ["Cattle","Iron","Timber"],
+    houses: ["Baratheon", "Connington", "Caron", "Estermont", "Selmy", "Mertyns", "Dondarrion", "Connington"]
   },
 ]
 

@@ -11,6 +11,7 @@ function RegionGrid(props) {
             population = {region.population} 
             description = {region.description}
             goods = {region.goods}
+            houses = {region.houses}
             />)}
     </ul>
 }

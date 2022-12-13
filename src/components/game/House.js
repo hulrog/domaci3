@@ -51,7 +51,7 @@ function House(props) {
         <Card>
             <div className = {classes.left}>
                 <div className = {classes.image}>
-                    <img src={`sigils/${props.name}.svg`} alt="N/A" />
+                    <img src={`sigils/House_${props.name}.svg`} alt="N/A" />
                 </div>
                 <div className = {classes.information}>
                     <h3>{props.name}</h3>
@@ -79,7 +79,7 @@ function House(props) {
                     <td> {props.siege}</td>
                 </tr>
                 <tr>
-                    <td> Castles </td>
+                    <td> Castle </td>
                     <td> {props.castle}</td>
                 </tr>
             </tbody>
