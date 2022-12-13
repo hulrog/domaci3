@@ -6,10 +6,10 @@ const houses = [
     name: "Targaryen",
     region: "The Crownlands",
     seat: "King's Landing",
-    horse: 1000,
-    foot: 5000,
-    ranged: 1000,
-    siege: 10,
+    horse: 2000,
+    foot: 6000,
+    ranged: 2000,
+    siege: 20,
     castle: 5
   },
   {

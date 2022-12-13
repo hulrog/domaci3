@@ -1,0 +1,21 @@
+.buttonRow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+
+.startBtn{
+    background-color: rgb(160, 0, 0);
+    padding: 10px;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 10em;
+    cursor:pointer;
+    align-items: center;
+
+}
+.startBtn:hover{
+    background-color: rgb(201, 2, 2);
+}

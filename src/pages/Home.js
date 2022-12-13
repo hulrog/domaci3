@@ -22,7 +22,7 @@ function HomePage() {
       of the war - the winning side and  number of casualties for both 
       sides calculated in an auto-resolve style algorithm.
     </p>
-    <Board>
+    <Board teamOne = {teamsCtx.teamOne} teamTwo = {teamsCtx.teamTwo}>
       <Team side = "Left" houses = {teamsCtx.teamOne} />
       <Team side = "Right" houses = {teamsCtx.teamTwo} />
     </Board>

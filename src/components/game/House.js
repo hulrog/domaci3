@@ -11,6 +11,11 @@ function House(props) {
     const houseIsTeamOne = teamsCtx.houseIsTeamOne(props.id);
     const houseIsTeamTwo = teamsCtx.houseIsTeamTwo(props.id);
 
+    var isTeam = props.isTeam;
+    var totalStrength = props.foot + props.horse*5 + props.ranged*2 + props.siege*50 + props.castle*100;
+    console.log("Total:" + totalStrength);
+
+
     function toggleTeamOneStatusHandler(){
         if(houseIsTeamOne){
             teamsCtx.removeTeamOne(props.id);
@@ -47,7 +52,7 @@ function House(props) {
     }
 
      return(
-    <li>
+    <li style={{display: (totalStrength===0) ? 'none' : 'block' }}>
         <Card>
             <div className = {classes.left}>
                 <div className = {classes.image}>
@@ -85,11 +90,11 @@ function House(props) {
             </tbody>
             </table>
             <div className = {classes.buttonColumn}>
-                <button onClick = {toggleTeamOneStatusHandler} disabled = {houseIsTeamTwo}> 
+                <button onClick = {toggleTeamOneStatusHandler} disabled = {houseIsTeamTwo} style={{display: isTeam ? 'none' : 'block' }}> 
                     {houseIsTeamOne ? "None" : "Team One"}
                 </button>
-                <button onClick = {toggleTeamTwoStatusHandler} disabled = {houseIsTeamOne}> 
-                    {houseIsTeamTwo ? "None" : "Team Two"} 
+                <button onClick = {toggleTeamTwoStatusHandler} disabled = {houseIsTeamOne} style={{display: isTeam ? 'none' : 'block' }}> 
+                    {(houseIsTeamTwo || isTeam) ? "None" : "Team Two"} 
                 </button>
             </div>
         </Card>
