@@ -30,7 +30,7 @@ function Board(props){
         }
     });
     var troopBreakdown1 = {
-        totalStrength: totalStrength1,
+        totalStrength: foot1 + horse1*5 + ranged1*2 + siege1*50 + castle1*100,
         foot: foot1,
         horse: horse1,
         ranged: ranged1,
@@ -61,7 +61,7 @@ function Board(props){
         }
     });
     var troopBreakdown2 = {
-        totalStrength: totalStrength2,
+        totalStrength: foot2 + horse2*5 + ranged2*2 + siege2*50 + castle2*100,
         foot: foot2,
         horse: horse2,
         ranged: ranged2,

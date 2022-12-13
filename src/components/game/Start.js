@@ -5,8 +5,6 @@ function Start(props){
     var teamOne = props.teamOne;
     var teamTwo = props.teamTwo;
     function war() {
-        console.log(teamOne);
-        console.log(teamTwo);
 
         var power1 = teamOne.totalStrength;
         var power2 = teamTwo.totalStrength;
@@ -19,16 +17,23 @@ function Start(props){
 
         // horse counters ranged
         if (teamOne.horse>teamTwo.ranged) {
-            power1 *= 1.3;
+            power1 *= 1.1;
         } else if(teamTwo.horse>teamOne.ranged) {
-            power2 *= 1.3;
+            power2 *= 1.1;
         }
         
         // siege counters castle
         if (teamOne.siege>teamTwo.castle) {
-            power1 *= 1.5;
-        } else if(teamTwo.siege>teamTwo.castle) {
-            power2 *= 1.5;
+            power1 *= 1.2;
+        } else if(teamTwo.siege>teamOne.castle) {
+            power2 *= 1.2;
+        }
+
+        // infantry superiority
+        if (teamOne.foot>teamTwo.foot) {
+            power1 *= 1.2;
+        } else if(teamTwo.foot>teamOne.foot) {
+            power2 *= 1.2;
         }
 
         console.log(power1);

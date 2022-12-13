@@ -13,7 +13,6 @@ function House(props) {
 
     var isTeam = props.isTeam;
     var totalStrength = props.foot + props.horse*5 + props.ranged*2 + props.siege*50 + props.castle*100;
-    console.log("Total:" + totalStrength);
 
 
     function toggleTeamOneStatusHandler(){
