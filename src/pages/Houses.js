@@ -265,17 +265,193 @@ const houses = [
     siege: 5,
     castle: 1
   },
+  {
+    id: "25",
+    name: "Ashford",
+    region: "The Reach",
+    seat: "Ashford",
+    horse: 500,
+    foot: 1000,
+    ranged: 500,
+    siege: 5,
+    castle: 1
+  },
+  {
+    id: "26",
+    name: "Bar Emmon",
+    region: "The Crownlands",
+    seat: "Sharp Point",
+    horse: 100,
+    foot: 500,
+    ranged: 200,
+    siege: 5,
+    castle: 1
+  },
+  {
+    id: "27",
+    name: "Brax",
+    region: "The Westerlands",
+    seat: "Hornvale",
+    horse: 500,
+    foot: 1000,
+    ranged: 500,
+    siege: 5,
+    castle: 1
+  },
+  {
+    id: "28",
+    name: "Smallwood",
+    region: "The Riverlands",
+    seat: "Acorn Hall",
+    horse: 600,
+    foot: 600,
+    ranged: 600,
+    siege: 5,
+    castle: 1
+  },
+  {
+    id: "29",
+    name: "Rykker",
+    region: "The Crownlands",
+    seat: "Duskendale",
+    horse: 200,
+    foot: 1000,
+    ranged: 200,
+    siege: 10,
+    castle: 1
+  },
+  {
+    id: "30",
+    name: "Royce",
+    region: "The Vale",
+    seat: "Runestone",
+    horse: 500,
+    foot: 1000,
+    ranged: 500,
+    siege: 10,
+    castle: 5
+  },
+  {
+    id: "31",
+    name: "Tarly",
+    region: "The Reach",
+    seat: "Hornhill",
+    horse: 700,
+    foot: 1200,
+    ranged: 400,
+    siege: 10,
+    castle: 5
+  },
+  {
+    id: "32",
+    name: "Dayne",
+    region: "Dorne",
+    seat: "Starfall",
+    horse: 600,
+    foot: 900,
+    ranged: 200,
+    siege: 5,
+    castle: 5
+  },
+  {
+    id: "33",
+    name: "Celtigar",
+    region: "Dorne",
+    seat: "Starfall",
+    horse: 200,
+    foot: 500,
+    ranged: 200,
+    siege: 5,
+    castle: 1
+  },
+  {
+    id: "34",
+    name: "Darry",
+    region: "The Riverlands",
+    seat: "Darry",
+    horse: 300,
+    foot: 400,
+    ranged: 200,
+    siege: 5,
+    castle: 1
+  },
+  {
+    id: "35",
+    name: "Farman",
+    region: "The Westerlands",
+    seat: "Fair Isle",
+    horse: 200,
+    foot: 500,
+    ranged: 500,
+    siege: 10,
+    castle: 5
+  },
+  {
+    id: "36",
+    name: "Webber",
+    region: "The Reach",
+    seat: "Coldmoat",
+    horse: 200,
+    foot: 500,
+    ranged: 500,
+    siege: 5,
+    castle: 5
+  },
+  {
+    id: "37",
+    name: "Goodbrother",
+    region: "The Iron Islands",
+    seat: "Great Wyk",
+    horse: 0,
+    foot: 1200,
+    ranged: 100,
+    siege: 10,
+    castle: 5
+  },
+  {
+    id: "38",
+    name: "Botley",
+    region: "The Iron Islands",
+    seat: "Lordsport",
+    horse: 100,
+    foot: 1000,
+    ranged: 500,
+    siege: 10,
+    castle: 1
+  },
+  {
+    id: "39",
+    name: "Estermont",
+    region: "The Stormlands",
+    seat: "Greenstone",
+    horse: 200,
+    foot: 500,
+    ranged: 500,
+    siege: 5,
+    castle: 5
+  }, 
+  {
+    id: "40",
+    name: "Grafton",
+    region: "The Vale",
+    seat: "Gulltown",
+    horse: 300,
+    foot: 1500,
+    ranged: 200,
+    siege: 10,
+    castle: 2
+  }
 ];
 
 function HousesPage() { 
-    return <div> 
-      <h1> Houses </h1>
-      <p>
-            The Houses page displays a list of houses,
-            in cards the same way as on the Home page. With buttons
-            to add a house into team 1 or team 2 or remove them.
-        </p>
-        <HousesList houses={houses}></HousesList>
+  return <div> 
+    <h1> Houses </h1>
+    <p style={{textAlign: "center"}}>
+      The Houses page displays a list of houses,
+      in cards the same way as on the Home page. With buttons
+      to add a house into team 1 or team 2 or remove them.
+    </p>
+    <HousesList houses={houses}></HousesList>
     </div>
   }
   

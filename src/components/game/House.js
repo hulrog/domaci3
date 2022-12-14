@@ -89,11 +89,11 @@ function House(props) {
             </tbody>
             </table>
             <div className = {classes.buttonColumn}>
-                <button onClick = {toggleTeamOneStatusHandler} disabled = {houseIsTeamTwo} style={{display: isTeam ? 'none' : 'block' }}> 
-                    {houseIsTeamOne ? "None" : "Team One"}
+                <button onClick = {toggleTeamOneStatusHandler} disabled = {houseIsTeamTwo} style={{display: isTeam ? 'none' : 'block', backgroundColor: houseIsTeamOne ? "whitesmoke" : ""}}> 
+                    Team One
                 </button>
-                <button onClick = {toggleTeamTwoStatusHandler} disabled = {houseIsTeamOne} style={{display: isTeam ? 'none' : 'block' }}> 
-                    {(houseIsTeamTwo || isTeam) ? "None" : "Team Two"} 
+                <button onClick = {toggleTeamTwoStatusHandler} disabled = {houseIsTeamOne} style={{display: isTeam ? 'none' : 'block', backgroundColor: houseIsTeamTwo ? "whitesmoke" : "" }}> 
+                    Team Two
                 </button>
             </div>
         </Card>
